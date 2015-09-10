@@ -1,0 +1,14 @@
+######################
+# OS generated files #
+######################
+.DS_Store*
+Icon?
+Thumbs.db
+
+# Keep our build files out of version control
+/build/css/*
+/build/js/*
+
+# Hide all the package files
+/vendor
+/node_modules

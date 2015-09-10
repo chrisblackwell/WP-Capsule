@@ -1,0 +1,10 @@
+{
+    "require": {
+        "chrisblackwell/wordpress-custom-post-type": "^1.0"
+    },
+    "autoload": {
+      "psr-4": {
+        "WPCapsule\\": "classes/"
+      }
+    }
+}

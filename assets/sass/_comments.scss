@@ -1,0 +1,89 @@
+.comments-area {
+  margin: 2rem 0 0 0;
+  .comments-title,
+  #reply-title {
+    font-size: 1.8rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid #ececec;
+    margin: 0 0 0rem 0;
+  }
+}
+
+.commentlist,
+#respond form {
+  @include boxshadow;
+  @include borderbox;
+  background: #fff;
+  position: relative;
+  padding: 1.5em;
+}
+
+ol.commentlist {
+  list-style:none;
+  margin: 1em 0;
+  padding:0;
+  text-indent:0;
+
+  li.comment {
+      border-bottom: 1px solid #ECECEC;
+      padding: 10px 5px 5px 90px;
+      article {
+          @include clearfix;
+      }
+      &.depth-1 {
+          padding: 15px 15px 15px 90px;
+      }
+      &.bypostauthor {
+          background: #FFF5EC;
+      }
+      &.parent {
+          border-left: 5px solid #111;
+      }
+      div.vcard {
+          color: #999;
+          font-size: 0.9em;
+          img.avatar {
+              border-radius: 50%;
+              float: left;
+              margin: 0 1em 1em -80px;
+          }
+          .author {
+              font-style: normal;
+              font-weight: bold;
+              font-size: 1.3em;
+              color: #333;
+          }
+      }
+      p {
+          font-size: 0.8em;
+          margin: 0 0 1em;
+      }
+      ul {
+          font-size: 0.8em;
+          list-style: square;
+          margin:0 0 1em 2em;
+      }
+      div.reply {
+          font-size: 0.8em;
+          float: right;
+      }
+      ol.children {
+          list-style: none;
+          margin: 0.3em 0;
+          padding: 0;
+          text-indent: 0;
+          li.depth-2 {
+              border-left: 3px solid #555;
+              margin: 0 0 .25em .25em;
+          }
+          li.depth-3 {
+              border-left: 3px solid #999;
+              margin: 0 0 .25em .25em;
+          }
+          li.depth-4 {
+              border-left: 3px solid #bbb;
+              margin: 0 0 .25em .25em;
+          }
+      }
+  }
+}
