@@ -8,7 +8,9 @@ $base-font-family: 'Open Sans', sans-serif;
 $base-font-color: #333;
 $base-link-color: #4183c4;
 
-$content-width: 73.75rem;
+$content-width: 118rem;
+
+$font-smoothing: true;
 
 @import "normalize";
 @import "fonts";
@@ -18,12 +20,21 @@ $content-width: 73.75rem;
 *  Primary Styles
 ***************************************************************/
 
+// We reset the html font size so we can
+// eaily use rem units in base 10
+html { font-size: 62.5% ;}
+
 body {
   background: #fff;
   font: 400 #{$base-font-size}/#{$base-line-height} $base-font-family;
   color: $base-font-color;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+  // Turn on font smoothing if set
+  @if $font-smoothing {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
 }
 
 .wrap {
