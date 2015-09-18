@@ -22,12 +22,16 @@ $font-smoothing: true;
 
 // We reset the html font size so we can
 // eaily use rem units in base 10
-html { font-size: 62.5% ;}
+html { font-size: 62.5% ;}  // 10px
 
 body {
   background: #fff;
   font: 400 #{$base-font-size}/#{$base-line-height} $base-font-family;
-  color: $base-font-color;
+  color: $base-font-color; //16px
+
+  h1 {
+    2.5rem;
+  }
 
   // Turn on font smoothing if set
   @if $font-smoothing {
