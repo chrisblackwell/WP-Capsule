@@ -1,6 +1,6 @@
-# WP Canvas
+# WP Capsule
 
-WP Canvas is easy to use WordPress starter theme. The theme includes easy to use functions and helpers for keeping your WordPress theme clean and easy to maintain.
+WP Capsule is easy to use WordPress starter theme. The theme includes easy to use functions and helpers for keeping your WordPress theme clean and easy to maintain.
 
 ### Custom Post Type Class
 
@@ -8,7 +8,7 @@ Creating custom post types has never been easier with the built-in Custom Post T
 
 Let's create a custom post type for cars. We woud pass the singular name to the constructor, and it will automatically be pluralized for you.
 ```php
-$car = new WP_Canvas\CustomPostType('Car');
+$car = new WebDevDude\CustomPostType('Car');
 ```
 
 We also have full control and can pass any options available in the [WordPress Codex](https://codex.wordpress.org/Function_Reference/register_post_type)
@@ -17,7 +17,7 @@ If we want to specify our plural name, we can pass it as the second parameter.
 
 Let's create another post type for our inventory. We can pass it the plural name, and an array of options to override the defaults.
 ```php
-$inventory = new WP_Canvas\CustomPostType('Inventory', 'Inventories', array(
+$inventory = new WebDevDude\CustomPostType('Inventory', 'Inventories', array(
   'menu_icon' => 'dashicons-performance',
   'hierarchical' => true,
   'supports' => array('title', 'editor', 'thumbnail', 'revisions', 'page-attributes')

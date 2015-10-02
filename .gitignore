@@ -6,8 +6,8 @@ Icon?
 Thumbs.db
 
 # Keep our build files out of version control
-/build/css/*
-/build/js/*
+/assets/css/*
+/assets/js/*
 
 # Hide all the package files
 /vendor

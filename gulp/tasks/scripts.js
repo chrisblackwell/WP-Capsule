@@ -19,6 +19,6 @@ module.exports = function() {
     .pipe(uglify())
       .on('error', gutil.log)
     .pipe(sourcemaps.write('./'))
-    .pipe(gulp.dest('./build/js/'))
+    .pipe(gulp.dest('./assets/js/'))
     .pipe(notify('Scripts have been compiled!'));
 };

@@ -2,13 +2,13 @@
 *  SASS Variables and Settings
 ***************************************************************/
 
-$base-font-size: 100%;
+$base-font-size: 1.6rem;
 $base-line-height: 1.5;
 $base-font-family: 'Open Sans', sans-serif;
 $base-font-color: #333;
 $base-link-color: #4183c4;
 
-$content-width: 118rem;
+$content-width: 118rem; // 1180px
 
 $font-smoothing: true;
 
@@ -29,10 +29,6 @@ body {
   font: 400 #{$base-font-size}/#{$base-line-height} $base-font-family;
   color: $base-font-color; //16px
 
-  h1 {
-    2.5rem;
-  }
-
   // Turn on font smoothing if set
   @if $font-smoothing {
     -webkit-font-smoothing: antialiased;
@@ -41,25 +37,9 @@ body {
 
 }
 
-.wrap {
-  width: $content-width;
-  margin: 0 auto;
-  @include clearfix;
-}
-
-a {
-  text-decoration: none;
-  color: $base-link-color;
-}
-
-.btn {
-  display: inline-block;
-}
-
-hr {
-  border: 0;
-  border-bottom: 1px solid #ccc;
-}
+@import "base";
+@import "layout";
+@import "headings";
 
 /**************************************************************
 *  Header
@@ -104,10 +84,10 @@ hr {
 @import "wordpress-core";
 
 /**************************************************************
-*  Fancybox Styles
+*  Vendor Styles
 ***************************************************************/
 
-@import "fancybox";
+@import "vendor/fancybox";
 
 /**************************************************************
 *  Responsive Styles

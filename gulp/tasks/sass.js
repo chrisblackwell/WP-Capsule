@@ -14,7 +14,7 @@ module.exports = function() {
       browsers: ['last 2 versions'],
       cascade: false
     }))
-    .pipe(gulp.dest('./build/css'))
+    .pipe(gulp.dest('./assets/css'))
     .pipe(notify({
       title: config.notify.title,
       message: 'SASS Compiled :-)',

@@ -38,6 +38,7 @@ class ThemeSetup {
     $this->textdomain = $name;
     add_action( 'after_setup_theme', array($this, 'setup') );
     add_action( 'wp_enqueue_scripts', array($this, 'scripts_and_styles') );
+    add_action( 'admin_enqueue_scripts', array($this, 'admin_scripts_and_styles') );
     add_action( 'widgets_init', array($this, 'register_sidebars') );
   }
 
@@ -129,7 +130,7 @@ class ThemeSetup {
     wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/assets/js/vendor/modernizr.min.js', array(), '2.6.2',  false );
     wp_enqueue_script(
       $this->textdomain . '-scripts',
-      get_template_directory_uri() . '/build/js/bundle.js',
+      get_template_directory_uri() . '/assets/js/bundle.js',
       array('jquery'),
       '1.0',
       true
@@ -138,8 +139,18 @@ class ThemeSetup {
     /*
      * Load CSS files
      */
-    wp_enqueue_style( $this->textdomain . '-styles', get_template_directory_uri() . '/build/css/main.css' );
+    wp_enqueue_style( $this->textdomain . '-styles', get_template_directory_uri() . '/assets/css/main.css' );
 
+  }
+
+  /**
+   * Register our admin styles and scripts to be used
+   *
+   */
+  public function admin_scripts_and_styles()
+  {
+    // Load CSS files
+    wp_enqueue_style( $this->textdomain . '-admin-styles', get_template_directory_uri() . '/assets/css/admin.css' );
   }
 
   /**
