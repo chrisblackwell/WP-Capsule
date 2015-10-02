@@ -1,6 +1,6 @@
 <?php
 /**
- * WP Canvas theme setup
+ * WP Capsule theme setup
  *
  * @package WP_Capsule
  * @subpackage WordPress
