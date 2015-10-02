@@ -2,6 +2,17 @@
 
 WP Capsule is easy to use WordPress starter theme. The theme includes easy to use functions and helpers for keeping your WordPress theme clean and easy to maintain.
 
+### Installation
+
+To install the themme, you must copy the entire folder into your themes directory. Feel free to rename the folder to whatever your theme will be called. Also update the `style.css` file with your theme's information.
+
+Run the following commands from the terminal from inside the theme folder.
+
+```
+composer install
+npm install
+```
+
 ### Custom Post Type Class
 
 Creating custom post types has never been easier with the built-in Custom Post Type class.
