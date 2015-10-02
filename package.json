@@ -1,6 +1,9 @@
 {
-  "private": true,
-  "dependencies": {
+  "name": "wp-capsule",
+  "version": "1.1",
+  "description": "WP Capsule gulp dependencies",
+  "author": "Chris Blackwell <chris@chrisblackwell.me>",
+  "devDependencies": {
     "browser-sync": "^2.9.3",
     "browserify": "^11.1.0",
     "gulp": "^3.9.0",
