@@ -1,11 +1,9 @@
 {
-  "name": "wp-capsule",
-  "version": "1.1",
-  "description": "WP Capsule gulp dependencies",
-  "author": "Chris Blackwell <chris@chrisblackwell.me>",
-  "devDependencies": {
+  "private": true,
+  "dependencies": {
     "browser-sync": "^2.9.3",
     "browserify": "^11.1.0",
+    "browserify-shim": "^3.8.10",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.0.1",
     "gulp-notify": "^2.2.0",
@@ -15,5 +13,16 @@
     "gulp-util": "^3.0.6",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
+  },
+  "browser": {
+    "jquery": "./node_modules/jquery/dist/jquery.js"
+  },
+  "browserify-shim": {
+    "jquery": "$"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
   }
 }

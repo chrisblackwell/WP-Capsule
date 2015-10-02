@@ -11,6 +11,8 @@ module.exports = {
   notify: {
     title: 'Gulp Notifier',
     icon_success: "./gulp/icons/pass.png"
-  }
+  },
+
+  domain: 'wpcapsule.dev'
 
 }
