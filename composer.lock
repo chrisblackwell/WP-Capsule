@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "114eee05fc507f0d62d13f80768cb7b9",
+    "hash": "e1db5c4556e56520310cc3465cd97218",
     "packages": [
         {
             "name": "chrisblackwell/wordpress-custom-post-type",
